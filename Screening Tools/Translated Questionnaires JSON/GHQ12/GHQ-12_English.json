@@ -1,0 +1,136 @@
+{
+  "id": "GHQ12",
+  "lang": "english",
+  "title": "GHQ-12 (General Health Questionnaire)",
+  "instructions": "Please answer the following questions based on your recent experiences.",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Have you recently been able to concentrate on what you are doing?",
+      "options": [
+        { "value": 0, "label": "Better than usual" },
+        { "value": 1, "label": "Same as usual" },
+        { "value": 2, "label": "Less than usual" },
+        { "value": 3, "label": "Much less than usual" }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "Have you recently lost much sleep over worry?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "No more than usual" },
+        { "value": 2, "label": "Rather more than usual" },
+        { "value": 3, "label": "Much more than usual" }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "Have you recently felt that you were playing a useful part in things?",
+      "options": [
+        { "value": 0, "label": "More so than usual" },
+        { "value": 1, "label": "Same as usual" },
+        { "value": 2, "label": "Less useful than usual" },
+        { "value": 3, "label": "Much less useful" }
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "Have you recently felt capable of making decisions about things?",
+      "options": [
+        { "value": 0, "label": "More so than usual" },
+        { "value": 1, "label": "Same as usual" },
+        { "value": 2, "label": "Less so than usual" },
+        { "value": 3, "label": "Much less capable" }
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "Have you recently felt constantly under strain?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "No more than usual" },
+        { "value": 2, "label": "Rather more than usual" },
+        { "value": 3, "label": "Much more than usual" }
+      ]
+    },
+    {
+      "id": "q6",
+      "text": "Have you recently felt you could not overcome your difficulties?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "No more than usual" },
+        { "value": 2, "label": "Rather more than usual" },
+        { "value": 3, "label": "Much more than usual" }
+      ]
+    },
+    {
+      "id": "q7",
+      "text": "Have you recently been able to enjoy your normal day-to-day activities?",
+      "options": [
+        { "value": 0, "label": "More so than usual" },
+        { "value": 1, "label": "Same as usual" },
+        { "value": 2, "label": "Less so than usual" },
+        { "value": 3, "label": "Much less than usual" }
+      ]
+    },
+    {
+      "id": "q8",
+      "text": "Have you recently been able to face up to your problems?",
+      "options": [
+        { "value": 0, "label": "More so than usual" },
+        { "value": 1, "label": "Same as usual" },
+        { "value": 2, "label": "Less able than usual" },
+        { "value": 3, "label": "Much less able" }
+      ]
+    },
+    {
+      "id": "q9",
+      "text": "Have you recently been feeling unhappy and depressed?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "No more than usual" },
+        { "value": 2, "label": "Rather more than usual" },
+        { "value": 3, "label": "Much more than usual" }
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "Have you recently been losing confidence in yourself?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "No more than usual" },
+        { "value": 2, "label": "Rather more than usual" },
+        { "value": 3, "label": "Much more than usual" }
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "Have you recently been thinking of yourself as a worthless person?",
+      "options": [
+        { "value": 0, "label": "Not at all" },
+        { "value": 1, "label": "No more than usual" },
+        { "value": 2, "label": "Rather more than usual" },
+        { "value": 3, "label": "Much more than usual" }
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "Have you recently been feeling reasonably happy, all things considered?",
+      "options": [
+        { "value": 0, "label": "More so than usual" },
+        { "value": 1, "label": "About same as usual" },
+        { "value": 2, "label": "Less so than usual" },
+        { "value": 3, "label": "Much less than usual" }
+      ]
+    }
+  ],
+  "scoring": {
+    "min": 0,
+    "max": 36,
+    "labels": [
+      { "max": 11, "label": "Normal" },
+      { "max": 36, "label": "Possible distress" }
+    ]
+  }
+}

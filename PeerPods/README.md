@@ -119,9 +119,6 @@ Edit the `filterMessage` function in `server.js` to modify:
 - Message length limits
 - Specialized filtering rules
 
-## 🤝 Contributing
-
-We welcome contributions! Please feel free to submit issues and pull requests.
 
 ### Development Setup
 1. Fork the repository
@@ -132,7 +129,7 @@ We welcome contributions! Please feel free to submit issues and pull requests.
 
 ## 📝 License
 
-This project is licensed under the ISC License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🆘 Support
 
@@ -141,13 +138,8 @@ If you encounter any issues or have questions:
 2. Create a new issue with detailed information
 3. Include steps to reproduce the problem
 
-## 🙏 Acknowledgments
 
-- Built for mental health support communities
-- Inspired by the need for safe online spaces
-- Thanks to the open-source community for amazing tools
-
----
 
 **PeerPods** - Creating safer conversations, one message at a time. 💬✨
+
 

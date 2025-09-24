@@ -4,7 +4,7 @@
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)
 ![Express](https://img.shields.io/badge/Express-4.18-blue)
 ![Socket.io](https://img.shields.io/badge/Socket.io-4.8-orange)
-![License](https://img.shields.io/badge/License-ISC-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 A real-time, AI-moderated chat application designed for safe peer-to-peer support conversations. PeerPods automatically filters inappropriate content to maintain a supportive environment for mental health discussions.
 
@@ -150,3 +150,4 @@ If you encounter any issues or have questions:
 ---
 
 **PeerPods** - Creating safer conversations, one message at a time. 💬✨
+

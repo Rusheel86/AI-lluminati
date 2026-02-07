@@ -1,0 +1,234 @@
+/* src/App.css */
+
+/* --- Light Theme Color Palette --- */
+:root {
+    --bg-main: #F4F7FC;
+    --bg-container: #FFFFFF;
+    --primary: #007BFF;
+    --primary-hover: #0069D9;
+    --text-primary: #212529;
+    --text-secondary: #6C757D;
+    --border-color: #DEE2E6;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    --status-moderate: #FFC107;
+    --status-high: #DC3545;
+}
+
+/* --- General & Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Main Layout --- */
+.dashboard-container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    height: 90vh;
+    background-color: var(--bg-container);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    background-color: var(--bg-main);
+    padding: 2rem;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border-color);
+}
+
+.sidebar .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--primary);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #E9ECEF;
+    color: var(--text-primary);
+}
+
+.sidebar ul li a.active {
+    background-color: var(--primary);
+    color: #FFFFFF;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+/* --- Main Content --- */
+.main-content {
+    flex: 1;
+    padding: 2.5rem;
+    overflow-y: auto;
+}
+
+.main-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.main-header p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* --- Cards --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--bg-container);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.full-width-card { grid-column: 1 / -1; }
+
+.card-header-wrapper {
+  grid-column: 1 / -1;
+  padding: 1rem 0 0 0;
+}
+.card-header-wrapper h3 { margin-bottom: 0.5rem; }
+
+/* --- Table & List Styling --- */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.schedule-table th, .schedule-table td {
+    text-align: left;
+    padding: 0.85rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.schedule-table th { color: var(--text-secondary); font-size: 0.9rem; }
+
+.status-pill {
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+.status-booked { background-color: #6C757D; }
+.status-open { background-color: var(--primary); }
+.status-available { background-color: #28A745; }
+
+.appointment-list, .report-list { list-style: none; }
+
+.report-card h4 { font-weight: 600; margin-bottom: 1rem; }
+.report-metrics { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem; }
+.metric-item { display: flex; align-items: center; gap: 0.5rem; }
+.risk-level-high { color: var(--status-high); font-weight: bold; }
+.risk-level-moderate { color: var(--status-moderate); font-weight: bold; }
+.last-screening { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+.view-report-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.view-report-btn:hover { background-color: var(--primary-hover); }
+
+/* --- Admin Dashboard Specifics --- */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.kpi-card { display: flex; align-items: center; gap: 1rem; }
+.kpi-icon { color: var(--primary); }
+.kpi-info { display: flex; flex-direction: column; }
+.kpi-value { font-size: 1.75rem; font-weight: 700; }
+.kpi-label { font-size: 0.9rem; color: var(--text-secondary); }
+
+.heatmap-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.heatmap-item { text-align: center; }
+.heatmap-color {
+    width: 100%;
+    padding: 1.5rem 0;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.heatmap-label { font-size: 0.85rem; color: var(--text-secondary); }
+
+/* --- Status Badges --- */
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.status-badge.status-moderate { background-color: var(--status-moderate); }
+.status-badge.status-high { background-color: var(--status-high); color: #fff; }
